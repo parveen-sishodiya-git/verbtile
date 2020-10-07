@@ -45,7 +45,7 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" id="searchNote" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
@@ -58,7 +58,7 @@
         <div class="jumbotron" style="padding: 2rem 2rem;">
             <h1 class="display-4 my-3">Type a note</h1>
             <div class="form-group">
-                <textarea id="note" class="form-control" rows="3"></textarea>
+                <textarea id="note" maxLength=500 class="form-control" rows="3"></textarea>
             </div>
             <hr class="my-2">
             <p class="lead">Ex- Don't forget to order JavaScript book.</p>
@@ -73,6 +73,7 @@
         <!-- note grid starts -->
         <div class="row container-fluid" id="noteGrid">
             <!-- note card -->
+
         </div>
         <!-- not grid ends -->
     </div>
