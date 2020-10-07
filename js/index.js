@@ -73,9 +73,9 @@ function searchNote(event) {
     let notes = document.getElementsByClassName('card');
     Array.from(notes).forEach(element => {
          console.log("ELEmEnt is = "+(element.getElementsByTagName('div')[2].innerHTML));
-         let noteText = (element.getElementsByTagName('div')[2]).getElementsByTagName('p')[0].innerText;
+         let noteText = (element.getElementsByTagName('div')[2]).getElementsByTagName('p')[0].innerText.toLowerCase();
          console.log(noteText);
-         if (!noteText.includes(event.target.value)) {
+         if (!noteText.includes(event.target.value.toLowerCase())) {
              element.style.display = "none";
          }else{
             element.style.display = "block";
