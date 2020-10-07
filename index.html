@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- nav bar starts -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">VerbTile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,37 +50,32 @@
             </form>
         </div>
     </nav>
+    <!-- nav bar ends -->
+
+    <!-- parent container starts-->
     <div class="container my-3">
+        <!-- card prompt starts -->
         <div class="jumbotron" style="padding: 2rem 2rem;">
             <h1 class="display-4 my-3">Type a note</h1>
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea id="note" class="form-control" rows="3"></textarea>
             </div>
             <hr class="my-2">
             <p class="lead">Ex- Don't forget to order JavaScript book.</p>
 
-            <a class="btn btn-primary btn-lg" href="#" role="button">Add Note</a>
+            <button id="addNote" class="btn btn-primary btn-lg" href="#" role="button">Add Note</button>
         </div>
+        <!-- card prompt ends -->
 
         <hr class="my-2">
 
         <h6 class="display-4 ml-3" style="line-height: 1.5;">Notes</h6>
-
-        <div class="row container-fluid">
-            <div class="card border-secondary mb-4 ml-4" style="max-width: 21rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body text-secondary">
-                    <h5 class="card-title">Secondary card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-           
-           
+        <!-- note grid starts -->
+        <div class="row container-fluid" id="noteGrid">
+            <!-- note card -->
         </div>
-
+        <!-- not grid ends -->
     </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

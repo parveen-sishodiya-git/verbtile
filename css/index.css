@@ -1,3 +1,9 @@
 .h6{
     color:blue;
 }
+
+.cardHeaderIcon{
+    text-align: right;
+    margin-left: 13.7em;
+    color:#E04F5F
+}
