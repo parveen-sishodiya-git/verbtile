@@ -7,3 +7,5 @@ This app is suppose to do the following things:
 Create Notes
 Create Todo 
 Create Reminder any many more features
+
+Version 1.0.0 //Stable version includes basic Add note, Delete Note, Search Note
