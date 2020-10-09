@@ -21,12 +21,12 @@ function displayNotes() {
     let noteGrid = "";
     if (notes != null ? (notes.length > 0) : false) {
         notes.forEach(function (item, index) {
-            noteGrid += `<div class="card border-secondary mb-4 ml-4" style="max-width: 21rem;height:280px;overflow-y:auto">
+            noteGrid += `<div class="card border-secondary mb-4 ml-4" style="max-width:21rem;height:280px;overflow-y:auto ">
         <div>
             <div class="card-header">
                 <span>NOTE ${index + 1}</span>
                 <span  href="#" class="cardHeaderIcon" onclick="deleteANote(${index})">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" style="float: right;"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
